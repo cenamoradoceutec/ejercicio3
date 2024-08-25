@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4 text-white">Conversor de Unidades</h2>
+        <div class="calculator-container">
+            <form id="conversionForm">
+                <div class="form-group">
+                    <label for="inputValue">Valor a Convertir:</label>
+                    <input type="number" class="form-control" id="inputValue" placeholder="Ingrese el valor" required>
+                </div>
+                <div class="form-group">
+                    <label for="conversionType">Tipo de Conversión:</label>
+                    <select class="form-control" id="conversionType" required>
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="km-m">Kilómetros a Metros</option>
+                        <option value="m-cm">Metros a Centímetros</option>
+                        <option value="ft-in">Pies a Pulgadas</option>
+                        <option value="yd-in">Yardas a Pulgadas</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Convertir</button>
+            </form>
+        </div>
+        <div class="mt-4" id="result"></div>
+    </div>
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   
+    <script src="app.js"></script>
+</body>
+</html>

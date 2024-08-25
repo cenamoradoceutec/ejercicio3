@@ -1,0 +1,15 @@
+body {
+    background: #68768A;
+}
+
+.container {
+    max-width: 720px;
+}
+
+.calculator-container {
+    padding: 30px 15px;
+    border-radius: 10px;
+    border: 1px solid #cce0e3;
+    background: white;
+
+}
